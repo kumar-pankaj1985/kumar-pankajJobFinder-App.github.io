@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <!-- Start your project here-->
+
+   <!--  <div style="height: 100vh">
+       <div class="flex-center">
+           <h1 class="animated fadeIn">Material Design for Bootstrap</h1>
+       </div>
+   </div> -->
+
+    <!-- /Start your project here-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+      <!-- start your project here -->
+      <div class="container-fluid">
+          <!-- Navbar -->
+          <nav class="navbar navbar-dark bg-danger navbar-fixed-top scrolling-navbar">
+           <!-- Collapse button-->
+           <button class="navbar-toggler hidden-sm-up btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsemenu">
+                <i class="fa fa-navicon" aria-hidden="true"></i>
+            </button>
+              <div class="collapse navbar-toggleable-sm" id="collapsemenu">
+                       <!-- branded nav item -->
+                       <a class="navbar-brand" href="http://www.monsterindia.com"><img src="monsterIndia.png" class="img-fluid" width="80" alt="Monster" style="border-radius: 40px"></a>
+                       <a href="https://my.monsterindia.com/login.html?r=1498587908"><button class="btn btn-secondary hidden-sm-up">Sign in</button></a>
+                <!--   Navbar brand -->
+                  <a class="navbar-brand" href="#" style="color: white">Monster</a>
+           
+              <!--  Links -->
+          <ul class="nav navbar-nav float-xs-right">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">JOBS</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">MY MONSTER</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">CARRER RESOURCES</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">NETWORK</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">MONSTER EDUCATION</a>
+              </li>
+
+              <div class="nav-item employee">
+                    <!--  glyphicon -->
+                  <div class="glyphicon col-sm-2">
+                      <i class="fa fa-user img  pull-left" position="relative" aria-hidden="true" style="font-size:55px;color:white; margin-left: 10px"></i>
+                  </div>
+                      
+                 <div class="col-sm-10">
+                    <a  href="http://recruiter.monsterindia.com/" class="nav-link dropdown-toggle emplink"
+                       id="dropdownMenu1" style="font-size:15px;color:white; margin-left: 14px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">EMPLOYERS </a>
+                <div class="dropdown-menu menus"  aria-labelledby="dropdownMenu1">
+                      <ul>
+                          <li>
+                               <a class="dropdown-item" href="Login_Modal.html">Login here</a>
+                   <!-- I have created another html page Login_Modal.html and gave the reference in Login Here --></li>
+                          </li><br>
+
+                          <li>
+                                <a href="https://recruiter.monsterindia.com/v2/ecom/jp learnmore.html">post jobs</a>
+                           </li><br>
+
+                          <li>
+                               <a href="https://recruiter.monsterindia.com/v2/ecom/sr learnmore.html">search resumes</a>
+                          </li><br>
+                     
+                          <li>
+                               <a href="https://recruiter.monsterindia.com/v2/ecom/more products.html">Buy online</a>
+                          </li><br>
+                     
+                          <li>
+                               <a href="https://recruiter.monsterindia.com">contact us</a>
+                          </li><br>
+                     
+                          <li>
+                               <a href="https://recruiter.monsterindia.com/v2/create recruiter.html">Join mRecruiter</a>
+                          </li><br>
+                        </li>
+                    </ul>
+                  </div>
+
+                    
+                      <a href="https://recruiter.monsterindia.com/?login=yes"
+                      style="color:white;margin-left:15px; margin-top: 3px;">Sign in</a><span style="color: white">|</span>
+                      <a href="https://recruiter.monsterindia.com/v2/ecom/more products.html" style="color:white;margin-left:0px">Buy Online</a>
+                  </div>
+             </div>
+          </ul>
+        </nav>
+     </div>
+          <div class="menuitems" id="header">
+ <!-- I am making to the  col-8 -->
+  <div class="col-sm-8">
+    <div class="container-fluid seraching">
+      <form class="form-inline">
+           <h1>Job search</h1>
+
+           <!--  <form class="form-inline">
+                   <div class="md-form form-group text-warning">
+                       <input type="text" class="form-control" id="jobtitle">
+                       <label for="jobtitle">JOB TITLE, KEYWORDS</label>
+                   </div>
+           
+                    <div class="md-form form-group">
+                       <input type="text" id="location" class="form-control">
+                       <label for="location">Exp(years)</label>
+                   </div>
+           
+                   <div class="md-form form-group">
+                       <input type="text" id="location" class="form-control">
+                       <label for="location">LOCATION</label>
+                   </div>
+           
+                   <div class="md-form form-group">
+                       <button class="btn btn-danger">SEARCH</button>
+                   </div>
+               </form> -->
+        <div class="md-form form-group">
+           <div class="col-sm-3">
+              <input type="text"  id="form1" class="form-control">
+              <label for="form1" style="margin-left: 40px;">Job Title,Keywords</label>
+           </div>
+        
+           <div class="col-sm-2" style="margin-left: 0px">
+              <input type="text"  id="form2" class="form-control">
+            <label for="form2" style="margin-left: 35px;">Exp(years)<i class="fa fa-caret-down" style="display: inline-block; margin-left: 15px;"></i></label>
+            <!-- <a  href="http://recruiter.monsterindia.com/" class="nav-link dropdown-toggle emplink"
+                       id="dropdownMenu1" style="font-size:15px;color:blue; margin-left: 14px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">EMPLOYERS </a>
+                <div class="dropdown-menu menus"  aria-labelledby="dropdownMenu1"> -->
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <ul>
+                      <li>
+                        <a class="dropdown-item">Exp(years)</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item">0</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item">1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item">2</a>
+                      </li>
+                       <li>
+                        <a class="dropdown-item">3</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item">4</a>
+                      </li>
+                    </ul>
+                </div>
+           </div> 
+           <div class="col-sm-3 map" style="margin-left: 8px">
+              <input type="text"  id="form3" class="form-control">
+              <label for="form3" style="margin-left: 40px;">Location</label>
+           </div>
+           <div class="col-sm-3 md-form form-group ">
+              <button class="btn btn-unique">SEARCH</button>
+           </div>
+           
+        </div>
+   </form>
+        <div class="lists">
+           <div class="navitemlist lists">
+              <ul>
+                 <li class="list-item heads"><a href="#">BROWSE JOBS</a></li>
+                    <li class="dropdownSearch">
+                      <li class="list-item">
+                        <ul class="dropdownSearch-menu dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li>
+                              <a class="dropdown-item" href="http://www.monsterindia.com/it-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">IT</a>
+                          </li>
+
+                          <li>
+                              <a  class="dropdown-item" href="http://www.monsterindia.com/manufacturing-engineering-r-d-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Manufacturing / Engineering / R&amp;D</a>
+                          </li>
+                            
+                            <li>
+                                <a  class="dropdown-item" href="http://www.monsterindia.com/finance-accounts-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Finance &amp; Accounts</a>
+                            </li>
+                            <li>
+                              <a  class="dropdown-item" href="http://www.monsterindia.com/customer-service-call-centre-bpo-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Customer Service / Call Center / BPO</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="http://www.monsterindia.com/sales-business-development-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Sales / Business Development</a>
+                            </li>
+
+                            <li>
+                              <a class="dropdown-item" href="http://www.monsterindia.com/banking-insurance-financial-services-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Banking, Insurance &amp; Financial Services</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                 href="http://www.monsterindia.com/pharmaceutical-biotechnology-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Pharmaceutical / Biotechnology</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="http://jobsearch.monsterindia.com/category/jobs-by-function.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">More</a>
+                            </li>
+                        </ul>
+                    </li>
+              <li class="dropdown fun">
+                        <a href="http://jobsearch.monsterindia.com/category/jobs-by-function.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" area-expanded="false">FUNCTIONS<!-- <i class="fa fa-caret-down"></i> -->
+                        <span class="caret"></span>
+                        </a>
+              <ul class="dropdown-menu" style="display: visible; background-color: green">
+                    <li class="dropdownSearch">
+                          <a href="http://www.monsterindia.com/it-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">IT</a>
+                    </li><br>
+
+                    <li class="dropdownSearch">
+                        <a href="http://www.monsterindia.com/manufacturing-engineering-r-d-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Manufacturing / Engineering / R&amp;D</a>
+                    </li>
+
+                    <li class="dropdownSearch">
+                        <a href="http://www.monsterindia.com/finance-accounts-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Finance &amp; Accounts</a>
+                    </li>
+
+                    <li class="dropdownSearch">
+                        <a href="http://www.monsterindia.com/customer-service-call-centre-bpo-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Customer Service / Call Center / BPO</a>
+                    </li>
+
+                    <li class="dropdownSearch">
+                        <a href="http://www.monsterindia.com/sales-business-development-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Sales / Business Development</a>
+                    </li>
+                    <li class="dropdownSearch">
+                         <a href="http://www.monsterindia.com/banking-insurance-financial-services-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Banking, Insurance &amp; Financial Services</a>
+                    </li>
+                    <li class="dropdownSearch">
+                         <a href="http://www.monsterindia.com/pharmaceutical-biotechnology-jobs.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Pharmaceutical / Biotechnology</a>
+                    </li>
+                  </ul>
+                        <!-- <ul class="dropdown-menu" style="display: visible; background-color: navy">
+                            <li>
+                              <a href="http://www.monsterindia.com" style="color: white"; >Another action</a></li>
+                              <li>
+                              <a  href="https://www.google.com" style="color: white">Something else here</a>
+                            </li>
+                        </ul> -->
+                    </li>
+              <li class="list-item">
+                <a href="http://jobsearch.monsterindia.com/location/jobs-by-location.html">Location <i class="fa fa-caret-down"></i><span class="icon-arrow"></span></a>
+                <ul class="dropdown-menu" style="display: visible; background-color: green">
+                    <li class="dropdownSearch">
+                          <a href="http://www.monsterindia.com/jobs-in-bangalore.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Bengaluru / Bangalore</a>
+                    </li><br>
+
+                    <li class="dropdownSearch">
+                          <a href="http://www.monsterindia.com/jobs-in-mumbai.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Mumbai</a>
+                    </li><br>
+                    <li class="dropdownSearch">
+                          <a href="http://www.monsterindia.com/jobs-in-chennai.html" style="overflow:hidden;white-space: nowrap;  text-overflow: ellipsis;">Chennai</a>
+                    </li><br>
+                    <li class="dropdownSearch">
+                         <a href="http://www.monsterindia.com/jobs-in-pune.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Pune</a>
+                    </li><br>
+                    <li class="dropdownSearch">
+                          <a href="http://www.monsterindia.com/jobs-in-delhi-region.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Delhi</a>
+                    </li><br>
+                    <li class="dropdownSearch">
+                         <a href="http://www.monsterindia.com/jobs-in-hyderabad.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Hyderabad / Secunderabad</a>
+                    </li><br>
+                     <li class="dropdownSearch">
+                         <a href="http://www.monsterindia.com/jobs-in-kolkata.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">Kolkata</a>
+                    </li><br>
+                     <li class="dropdownSearch">
+                        <a href="http://jobsearch.monsterindia.com/category/jobs-by-location.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">More</a>
+                    </li><br>
+
+
+
+                   </ul>
+                    </li>
+                    
+<!-- 
+                    <li class="dropdownSearch">
+                        <a href="http://jobsearch.monsterindia.com/category/jobs-by-function.html" style="overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;">More</a>
+                    </li> -->
+                    <li class="list-item"><a href="#">INDUSTRY</a></li>
+                    <li class="list-item"><a href="#">SKILLS</a></li>
+                    <li class="list-item"><a href="#">COMPANIES</a></li>
+                    <li class="list-item"><a href="#">CONSULTANTS</a></li>
+                    <li class="list-item"><a href="#">WALKINS</a></li>
+                    <li class="list-item"><a href="#">GOVERNMENT</a></li>
+
+                    <li class="dropdown drop">
+                        <a href="http://www.monsterindia.com" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" area-expanded="false">MORE<!-- <i class="fa fa-caret-down"></i> -->
+                        <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="display: visible;background-color:#A02626">
+                            <li>
+                              <a href="http://www.monsterindia.com" style="background-color: maroon;color:white">Another action</a></li>
+                              <li>
+                              <a  href="https://www.google.com" style="background-color: black;color:white">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+              </ul>
+           </div>
+       </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4"></div>
+  <div class="jobseekers">
+  <div class="stdlogin">
+      <i class="fa fa-user fa-3x fa-inverse" class="pull-left" aria-hidden="true"></i>
+      <div class="pull-right white-text" style="margin-right: 50px">
+          <a href="#">JOBSEEKER</a><br>
+          <a href="#">Sign in</a> <span>|</span>
+          <a href="#">Register</a>
+      </div>
+  </div>
+  <div class="upload">
+      <i class="fa fa-cloud-upload fa-3x fa-inverse pull-left" aria-hidden="true"> </i>
+      <a href="" style="margin-left: 0px;">UPLOAD RESUME</a>
+  </div>
+</div>
+</div>
+      <div class="container-fluid">
+        
+        <div class="col-sm-9">
+        <div class="row">
+        <div class="col-sm-12 clearfix">
+        <h1 style="float: left">Employers of Choice</h1>
+        <img src="AnimationImage.gif" style="float: right;padding: 10px">
+        </div>
+        </div>
+            <div class="col-sm-3">
+            <div class="slide-cont">
+  <div class="owl-carousel">
+    <div><img src="img/ComapnyImages/bracklays.jpg" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/convergys.gif" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/cybage.jpg" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/datamatics.jpg" height="60" width="160"></div>
+  </div>
+</div>
+</div>
+          <!-- 2nd Column started of col-md-9 which size is 3 -->
+
+          <div class="col-sm-3">
+            <div class="slide-cont">
+  <div class="owl-carousel">
+    <div><img src="img/ComapnyImages/Cyient.gif" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/EOC.jpg" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/foodlinked.jpg" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/genpact.jpg" height="60" width="160"></div>
+  </div>
+</div>
+</div>
+        <!-- 3rd Column started of col-md-9 which size is 3 -->
+
+            <div class="col-sm-3">
+              <div class="slide-cont">
+  <div class="owl-carousel">
+    <div><img src="img/ComapnyImages/hcl.gif" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/GEP.jpg" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/harman.jpg" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/hgs.jpg" height="60" width="160"></div>
+  </div>
+</div>
+</div>
+          <!-- 4th Column started of col-md-9 which size is 3 -->
+
+          <div class="col-sm-3">
+          <div class="slide-cont">
+          <div class="owl-carousel">
+    <div><img src="img/ComapnyImages/infinite.gif" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/icici.jpg" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/microsoft.jpg" height="60" width="160"></div>
+    <div><img src="img/ComapnyImages/isys.jpg" height="60" width="160"></div>
+  </div>
+  </div>
+  </div>  <!-- all cloumns closed here -->
+  </div> <!--  Now I am closing 1st division of col-sm-9, 2nd whci I left now is col-sm-3 -->
+        <!-- 2nd column of col-sm-9 with size of 3 -->
+
+        <div class="col-sm-3" style="padding:10px">
+          <img src="fixImage.jpg" alt="AirForce Job">
+        </div>
+        </div>
+        </div>  
+
+        <!-- ....We have end the Image section here... -->
+
+            <div class="container-fluid" style="margin-top: 30px">
+        <h1 style="text-align: center;color: black">Jobs you may be interested in</h1>
+            <div class="col-sm-12">
+            
+            <div class="col-sm-3">
+              
+            <div class="panel panel-primary">
+              
+            <div class="panel-heading" style="background-color:#FF6600!important;margin:0px">
+              <a href="http://www.monsterindia.com">
+              <h1 class="panel-title" style="padding:10px 10px;text-align: center;color:white">TOP JOBS</h1></a>
+              </div> <!-- panel-heading class div is closed -->
+
+               <div class="panel-body" class="bodyDetails">
+                
+                <p>JAVA L1</p>
+                <a href="https://www.brainvire.com/"><p>Brainvire</p></a>
+                <p>Bengaluru/Pune</p>
+                <p>1-2 years</p>
+        
+          
+        <button class="btn btn-warning btn-md">Apply</button><br>
+        
+                </div> <!-- 1st panel body closed before divider -->
+
+        <div class="panel-body" class="bodyDetails"><br>
+            
+                <p>.net Developer</p>
+                <a href="http://www.webcomindia.biz"><p>WebCom India Pvt. Ltd</p></a>
+                <p>Bengaluru/Bangalore</p>
+                <p>3-5 years</p>
+        <!-- </div> panel-body class is closed -->
+          
+        <button class="btn btn-warning btn-md">Apply</button>
+        <a href="http://www.monsterindia.com" style="float: right">More Jobs+</p>
+        </a>
+        </div> <!-- 2nd panel body of 1st cloumn is closed --> 
+
+            </div> <!-- here closing panel panel primary class div -->
+
+            </div> <!-- here closing first column col-sm-3 -->
+
+            <!-- Now starting second column from here -->
+
+              <div class="col-sm-3">
+            
+              <div class="panel panel-primary">
+                
+   <div class="panel-heading" style="background-color:#FF6600!important">
+          
+   <a href="http://www.monsterindia.com">
+              <h1 class="panel-title" style="padding:10px 10px;text-align: center;color: white">WALK-IN-JOBS</h1></a>
+
+   </div>
+
+          <div class="panel-body" class="bodyDetails">
+            
+                <p>JAVA L2</p>
+              <a href="https://www.scnsoft.com"><p>ScienceSoft</p></a>
+                <p>Bengaluru/New Delhi</p>
+                <p>4-7 years</p>
+                  
+                <button class="btn btn-warning btn-md">Apply</button><br>
+
+                </div> <!-- first panel body of 2nd column ends here -->
+
+          <div class="panel-body" class="bodyDetails"><br>
+            
+                <p>Customer Support Exe.</p>
+                <a href="https://www.oxagile.com"><p>Oxagile</p></a>
+                <p>Bengaluru/Bangalore</p>
+                <p>1-2 years</p>
+
+               <button class="btn btn-warning btn-md">Apply</button>
+               <a href="http://www.monsterindia.com" style="float: right">More Jobs+</p>
+        </a>
+
+        </div> <!-- 2nd panel body of 2nd column of ends here -->
+        </div>  <!-- panel class primary of 2nd clomn ends here -->
+        </div>  <!-- 2nd cloumn ends here -->
+
+        <!-- Now starting third column from here -->
+
+              <div class="col-sm-3">
+              
+              <div class="panel panel-primary">
+                
+   <div class="panel-heading" style="background-color:#FF6600!important">
+          
+   <a href="http://www.monsterindia.com">
+              <h1 class="panel-title" style="padding:10px 10px;text-align: center;color: white">CONTRACT JOBS</h1></a>
+
+   </div>
+
+          <div class="panel-body" class="bodyDetails">
+            
+                <p>Sr.Network Eng.</p>
+                <a href="http://www.juniper.net/us/en"><p>JuniperNetworks</p></a>
+                <p>Bengaluru/Bangalore</p>
+                <p>5-7 years</p>
+
+                <button class="btn btn-warning btn-md">Apply</button><br>
+                </div> <!-- first panel body of 3rd column ends here -->
+
+          <div class="panel-body" class="bodyDetails"><br>  
+            
+                <p>Network Administrator</p>
+                <a href="http://www.networkworld.com"><p>NetworkWorld</p></a>
+                <p>Bengaluru/Bangalore</p>
+                <p>4-7 years</p>   
+                <button class="btn btn-warning btn-md">Apply</button>
+                <a href="http://www.monsterindia.com" style="float: right">More Jobs+</p>
+        </a>
+        </div> <!-- 2nd panel body of 3rd column of ends here -->
+        </div>  <!-- panel class primary of 3rd clomn ends here -->
+        </div>  <!-- 3rd cloumn ends here -->
+
+        <!-- Now starting 4th column from here -->
+
+              <div class="col-sm-3">
+              
+              <div class="panel panel-primary">
+                
+   <div class="panel-heading" style="background-color:#FF6600!important">
+          
+   <a href="http://www.monsterindia.com">
+              <h1 class="panel-title" style="padding:10px 10px;text-align: center;color: white">STARTUP JOBS</h1></a>
+
+   </div>
+
+          <div class="panel-body" class="bodyDetails">
+            
+                <p>Quality Analyst</p>
+                <a href="http://www.convergys.com"><p>Convergys</p></a>
+                <p>Bengaluru/Bangalore</p>
+                <p>4-7 years</p> 
+                <button class="btn btn-warning btn-md">Apply</button><br>
+        </div> <!-- first panel body of 3rd column ends here -->
+
+</div>
+</div>
+</div>
+</div>
+
+              <div class="container-fluid" style="margin-top: 40px;background-color:pink">
+                <div class="col-sm-12">
+                  <div class="col-sm-6" style="border-top-right-radius: 20px;padding-top: 10px">
+                    
+                    <img src="cartoonImage.png">
+
+                  </div>
+                  <div class="col-sm-6" style="border-top-left-radius: 20px;padding-top: 100px">
+                    <h2><span class="orange">FIND BETTER</span>JOBS WITH MONSTER APP</h2>
+                    <p><strong>Over a million downloads</strong>
+                    <p>Increase your chances of receiving relevant jobs from recruiters. Apply to jobs on the go Discover connections who can refer you for jobs Exclusively on App</p>
+
+                    <div class="appImage" style="display: block">
+                     <a href="https://www.apple.com/itunes/download/"> <img src="appstore.gif" style="border-radius: 5px">
+                     <a href="https://play.google.com/store"><img src="googleplay.gif" style="border-radius: 5px"></a>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+              <div class="container-fluid" style="margin-top: 30px">
+              <div class="row">
+              <h2 style="text-align: center">Career Services</h2>
+              <p style="text-align: center">(Put your career in top gear with our career services)</p>
+              <div class="clearfix"></div>
+              <div class="requestCss" style="margin-left: 500px">
+              <div id="callback">
+                <div class="input pull-left">
+                  <input type="text" name="request" id="phnumber" placeholder="Type your Mobile number" aria-label="callback" style="background-color:white;padding: 9px;border-top-left-radius: 7px;border-bottom-left-radius: 7px;border:1px solid orange">
+                </div>
+                <div class="but pull-left">
+                  <button onclick="mybutton()" id="demo1" class="btn-btn-warning" style="background-color:#FF6600!important;padding:11.8px;border-top-right-radius: 7px;border-bottom-right-radius: 7px">Request a call Back</button>
+                  <div>
+                  <p id="demo" style="background-color: lightgrey;color: red;margin-left:-50px"></p>
+                  <script>
+                    function mybutton(){
+                      document.getElementById("phnumber").style.display='none';
+                      document.getElementById("demo1").style.display='none';
+                      document.getElementById("demo").innerHTML="Thank You! Our Customer Representative Will Contact You Soon..!!";
+                    }
+                  </script>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              </div>
+                
+              </div>
+              </div>
+              <div class="clearfix"></div>
+              
+            <div class="col-sm-12" style="margin-top: 20px">
+            <div class="col-sm-6 careerPad">
+              <div class="row">
+
+                <div class="col-sm-6">
+                  <div class="careerPaid">
+                    <div class="imgPic1"> <!-- 1st Div starts from here -->
+                      <img src="GirlsWithGlobePics.jpg">
+                    </div> <!-- 1st Div closed here -->
+                    <div class="careerText">
+                      <span>
+                      <a href="http://www.monsterindia.com" style="color:orange">Xpress Resume+</a>
+                      </span>
+                      <p>By XPRESSResume+ you can Share Your Resume with Top Consultants & Expedite your Job Hunt</p>
+                      <div class="cartext">  <!-- Last DIV starts here -->
+                      <a href="http://www.monsterindia.com">Starting at.
+                      Rs.&nbsp;5990.00 <em>*</em></a>
+                    </div> <!-- Last DIV close here -->
+                  </div>
+                </div>
+              </div> <!-- 1st row 1st closed here -->
+
+              <div class="col-sm-6">
+                <div class="careerPaid">
+                  <div class="imgPic2">
+                    <img src="manImage.jpg">
+                  </div>  <!-- imgPic2 Div closed here -->
+       <!-- not closed  --><div class="careerText">
+                      <span>
+                <a href="http://www.monsterindia.com" style="color:orange">Right Resume</a>
+                      </span>
+                    <p>Get right Resume for a great impression with a Professionally written resume.</p>
+                    <div class="cartext">
+                      <a href="http://www.monsterindia.com" style="background-color:#839a1b">Starting at.
+                      Rs.&nbsp;749.00 <em>*</em></a>
+                    </div>
+                </div>
+              </div>
+
+            </div> 
+           </div> <!-- 1st row closed here -->
+          <div class="row" style="margin-top: 65px">
+            <div class="col-sm-6">
+              <div class="careerPaid">
+                <div class="imgPic3">
+                  <img src="WinnerMan.jpg">
+                </div>
+                <div class="careerText">
+                  <span>
+                  <a href="http://www.monsterindia.com">Career Booster</a>
+                  </span>
+                  <p>Right Resume (Professionally Written Resume) + XPRESSResume+ (Share with Top Consultants)</p>
+                  <div class="cartext">
+                      <a href="http://www.monsterindia.com" style="background-color: purple">Save Upto.
+                      Rs.&nbsp;520<em>*</em></a>
+                    </div>
+                </div>
+              </div>
+            </div>    <!-- 2nd Row 1st column ends here -->
+
+            <div class="col-sm-6">
+              <div class="careerPaid">
+                <div class="imgPic4">
+                  <img src="ManPicsImage.jpg">
+                </div>
+                <div class="careerText">
+                  <span>
+                  <a href="http://www.monsterindia.com">Resume Highlighter</a>
+                  </span>
+                  <p>Get noticed by the recruiters by Highlighting skills on resume. Get Resume Highlighter Now.</p>
+                  <div class="cartext">
+                      <a href="http://www.monsterindia.com" style="background-color:#e5073e">Starting at.
+                      Rs.&nbsp;499.00<em>*</em></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>   <!-- 2nd row 2nd columns ends here -->
+           </div>   <!-- 2nd column ends here -->
+
+         <!--  2nd coloumn started from here -->
+
+          <div class="col-sm-6 edu">
+            <div class="row" style="margin-left: -30px;margin-right: -30px">
+              <div class="col-sm-12">
+                <div class="panel panel-primary">
+                  <div class="panel-heading" style="text-align: center;padding:20px">
+                  <img src="mnEdu.gif" alt="Professional courses and Certifications" style="vertical-align: middle">
+                  </div>
+                <div class="panel-body" style="padding:10px;">
+                  <div class="contxt" style="margin-left:5px">
+                    <span><h4 style="color:orange"><strong>Upgrade Your Skills</strong></h4></span>
+                    <p><small>Fast track your way up the career ladder! Expand your learning and skills, take an online certificate course or opt for an e-learning certification to further your career growth.</small></p>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 education" style="border:2px solid white;background-color: white">
+                      <a href="http://www.monsterindia.com/courses-certifications/business-and-management/executive-programme-in-project-management-iim-r/2370/" class="educol">
+                    <div class="edutit" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis">
+                      Executive Programme in Project Management(IIM-R)
+                    </div>
+                    <div class="educourse" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;color: orange">
+                      Course Type:Certification
+                    </div>
+                    <span>Keywords</span>
+                    <p style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis"><span class="icon-square"></span>
+                    <span></span>Project Management</p></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+
+                    <div class="col-sm-6 education2" style="border:2px solid white;background-color: white">
+
+                    <a href="http://www.monsterindia.com/courses-certifications/business-and-management/supply-chain-management/2324/" class="educol">
+                    <div class="edutit" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis">
+                    Supply Chain Management  
+                    </div>
+                    <div class="educourse" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;color: orange">
+                    course Type:Certifications
+                    </div>
+                    <span>Keywords</span>
+                    <p style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis"><span class="icon-square"></span>
+                    <span></span>Supply Chain Management</p></a>
+                </div>
+                </div> 
+
+                <div class="row">
+                <div class="col-sm-12" style="margin:12px">
+                <div class="clearfix"></div>
+                <button class="btn btn-warning" style="padding:20px 190px;margin-left: -10px;margin-top:20px">View All Courses & Certifications</button>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+         <div class="container-fluid">
+         <div class="col-sm-12 MainDiv" style="margin-top:30px;background-color: lightgrey;padding:40px">
+               <div class="col-sm-4" style="border:2px solid white;background-color: white;padding:35px;margin-left:-30px;margin-right:5px">
+                 <img src="emp-index.gif" height="140px" width="300px">
+                 <a href="http://www.monsterindia.com"><p class="monsterIndex">Monster Employment Index India registered Seven Percent Growth, Year-on-Year for May'17</p></a>
+                 <a href="http://www.monsterindia.com/employment-index/"><p class="monsterIndex2">Telecom/ISP witnessed an annual growth followed by Banking/ Financial Services,Insurance...</p></a>
+               </div>
+
+               <div class="col-sm-4" style="border:2px solid white;background-color: white;padding: 25px;margin-left: 5px;margin-right: 10px">
+               <a href="http://my.monsterindia.com/salary-check.html">
+                 <img src="mpic3.jpg" height="200px" width="300px"></a>
+                 <p>Monster Salary Index a joint initiative of Monster India & paycheck in with IIM-A as research partner is based on salary
+                 of millions of profle across different industry verticals,
+                 functions and roles...</p>
+
+               </div>
+
+               <div class="col-sm-4" style="border:2px solid white;background-color: white;margin-right:-30px">
+                 <p style="font-size:20px;color:blue">Monster Poll</p>
+                 <p>How comfortable do you feel giving upward feedback to your 
+                 manager?</p>
+                 <form action="#">
+    <p>
+      <input name="group1" type="radio" id="test1"/>
+      <label for="test1">Somewhat comfortable</label>
+    </p>
+    <p> 
+      <input name="group1" type="radio" id="test2" />
+      <label for="test2">Comfortable</label>
+    </p>
+    <p>   
+      <input class="group1" name="group1" type="radio" id="test3"  />
+      <label for="test3">Very comfortable</label>
+    </p>
+    <p>   
+      <input name="group1" type="radio" id="test4"/>
+      <label for="test4">I wouldn't think of it</label>
+    </p>
+  </form>
+  <div class="row">
+  <div class="col-sm-12">
+    <button class="btn btn-warning" style="padding: 15px 170px">VOTE</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+        <div class="container-fluid" style="margin-top: 30px">
+        <center>
+        <img src="9992015788335669416.png">
+        </center>
+        </div>
+
+        <div class="container-fluid" style="margin-top:20px">
+        <div class="row">
+        <div class="col-sm-12" style="border:1px solid lightgrey;padding: 20px;background-color: lightgrey">
+        <div class="col-sm-2">
+          <i class="fa fa-phone" aria-hidden="true">Toll No: +91-40-66116611</i>
+        </div>
+        <div class="col-sm-2">
+          <i class="fa fa-paper-plane" aria-hidden="true"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">  info@monsterindia.com</a></i>
+        </div>
+        <div class="col-sm-2">
+          <i class="fa fa-mobile" aria-hidden="true">
+            Toll Free: 1-800-4196666
+          </i>
+        </div>
+        <div class="col-sm-2"></div>
+          <div class="col-sm-4 pull-right">
+            <select class="form-control" onchange="window.open(this.value,'_blank')" style="padding: 8px 12px;height: 45px;background-color: white;margin-top: -10px;margin-left: 30px">
+              <option value="http://www.monsterindia.com" selected="selected">India</option>
+              <option value="http://www.monsterindia.com">Gulf</option>
+              <option value="http://www.monsterindia.com">Hong Kong</option>
+              <option value="http://www.monsterindia.com">Singapore</option>
+              <option value="http://www.monsterindia.com">Philippines</option>
+              <option value="http://www.monsterindia.com">Thailand</option>
+              <option value="http://www.monsterindia.com">Vietnam</option>
+              <option value="http://www.monsterindia.com">Indonesia</option>
+              <option value="http://www.monsterindia.com">Malaysia</option>
+            </select>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+         <div class="container-fluid" style="margin-top: 30px">
+            <div class="row">
+             <div class="col-sm-12">
+             <div class="btm">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#career">Career at Monster</a>
+                <a href="#advertise">Advertise here</a>
+                <a href="#search">Search Jobs</a>
+                <a href="#account">Create Account</a>
+                <a href="#app">Monster App</a>
+                <a href="#jobalert">Job Alert</a>
+                <a href="#help">Help</a>
+                <a href="#rss">RSS Job Feed</a>
+                <a href="#findCom">Find Companies</a>
+            </div>
+            </div>
+            </div>
+
+             <!-- 1st Row Finished -->
+
+            <div class="row bottom_line" style="margin-top: 20px;background-color: lightgrey;border:1px solid grey;border-width: thin">
+            <div class="col-sm-2">
+              <a href="http://www.monsterindia.com/jobs-by-skill.html" class="f_linkwrap footer_heading" title="jobsBySkills">Jobs by Skills</a>
+              <span class="colonstyle"></span>
+            </div>
+            <div class="col-sm-10 footerLink">
+              <ul class="f_linkwrapMain">
+                 <li>
+                 <a href="http://www.monsterindia.com/call-center-jobs.html" class="f_linkwrap" title="callcenter">Callcenter Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mechanical-engineering-jobs.html" class="f_linkwrap" title="mechanical-engineering-jobs">Mechanical Engineering Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/nursing-jobs.html" class="f_linkwrap" title="nursing-jobs">Nursing Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/bpo-jobs.html" class="f_linkwrap" title="bpo-jobs">BPO Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/networking-jobs.html" class="f_linkwrap" title="networking-jobs">Networking Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mba-jobs.html" class="f_linkwrap" title="mba-jobs">MBA Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/java-jobs.html" class="f_linkwrap" title="java-jobs">JAVA Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/seo-jobs.html" class="f_linkwrap" title="seo-jobs">SEO Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/sap-jobs.html" class="f_linkwrap" title="sap-jobs">SAP Jobs</a>|
+                 </li>
+
+              </ul>
+            </div>
+
+            </div>
+
+            <!-- 2nd Row Finished -->
+
+            <div class="row bottom_line" style="background-color: lightgrey;border:1px solid grey;border-width: thin">
+            <div class="col-sm-2">
+              <a href="http://www.monsterindia.com/jobs-by-skill.html" class="f_linkwrap footer_heading" title="jobsBySkills">Jobs by Location</a>
+              <span class="colonstyle"></span>
+            </div>
+            <div class="col-sm-10 footerLink">
+              <ul class="f_linkwrapMain">
+                 <li>
+                 <a href="http://www.monsterindia.com/call-center-jobs.html" class="f_linkwrap" title="l_delhi">Jobs in Delhi</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mechanical-engineering-jobs.html" class="f_linkwrap" title="l_Bangalore">Jobs in Bangalore</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/nursing-jobs.html" class="f_linkwrap" title="l_mumbai">Jobs in Mumbai</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/bpo-jobs.html" class="f_linkwrap" title="l_Chennai">Jobs in Chennai</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/networking-jobs.html" class="f_linkwrap" title="l_Hyderabad">Jobs in Hyderabad</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mba-jobs.html" class="f_linkwrap" title="l_kolkata">Jobs in Kolkata</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/java-jobs.html" class="f_linkwrap" title="l_pune">Jobs in Pune</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/seo-jobs.html" class="f_linkwrap" title="l_chandigarh">Jobs in Chandigarh</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/sap-jobs.html" class="f_linkwrap" title="l_lko">Jobs in Lucknow</a>|
+                 </li>
+
+              </ul>
+            </div>
+
+            </div>
+
+            <!-- 3rd Row Finished -->
+
+            <div class="row bottom_line" style="background-color: lightgrey; border:1px solid grey;border-width: thin">
+            <div class="col-sm-2">
+              <a href="http://www.monsterindia.com/jobs-by-skill.html" class="f_linkwrap footer_heading" title="jobsBySkills">Jobs by Function</a>
+              <span class="colonstyle"></span>
+            </div>
+            <div class="col-sm-10 footerLink">
+              <ul class="f_linkwrapMain">
+                 <li>
+                 <a href="http://www.monsterindia.com/call-center-jobs.html" class="f_linkwrap" title="banking">Banking Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mechanical-engineering-jobs.html" class="f_linkwrap" title="biotech">Biotech Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/nursing-jobs.html" class="f_linkwrap" title="nursing-jobs">Nursing Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/bpo-jobs.html" class="f_linkwrap" title="airlines-jobs">Airlines Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/networking-jobs.html" class="f_linkwrap" title="hr-jobs">HR Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mba-jobs.html" class="f_linkwrap" title="accounts-jobs">Accounts Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/java-jobs.html" class="f_linkwrap" title="splChain-jobs">Suuply Chain Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/seo-jobs.html" class="f_linkwrap" title="legal-jobs">Legal Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/sap-jobs.html" class="f_linkwrap" title="marketing-jobs">Marketing Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/sap-jobs.html" class="f_linkwrap" title="telecom-jobs">Telecom Jobs</a>|
+                 </li>
+
+              </ul>
+            </div>
+
+            </div>
+
+            <div class="row bottom_line" style="background-color: lightgrey; border:1px solid grey;border-width: thin">
+            <div class="col-sm-2">
+              <a href="http://www.monsterindia.com/jobs-by-skill.html" class="f_linkwrap footer_heading" title="jobsBySkills">Jobs by Idustry</a>
+              <span class="colonstyle"></span>
+            </div>
+            <div class="col-sm-10 footerLink">
+              <ul class="f_linkwrapMain">
+                 <li>
+                 <a href="http://www.monsterindia.com/call-center-jobs.html" class="f_linkwrap" title="it">IT Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mechanical-engineering-jobs.html" class="f_linkwrap" title="Pharmaceutical">Pharmaceutical Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/nursing-jobs.html" class="f_linkwrap" title="travel">Travel Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/bpo-jobs.html" class="f_linkwrap" title="oil and Gas-jobs">Oil and Gas Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/networking-jobs.html" class="f_linkwrap" title="fmcg-jobs">FMCG Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mba-jobs.html" class="f_linkwrap" title="construction-jobs">Construction Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/java-jobs.html" class="f_linkwrap" title="chemical-jobs">Chemical Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/seo-jobs.html" class="f_linkwrap" title="media-jobs">Media Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/sap-jobs.html" class="f_linkwrap" title="retail-jobs">Retailing Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/sap-jobs.html" class="f_linkwrap" title="pr-jobs">PR Jobs</a>|
+                 </li>
+
+              </ul>
+            </div>
+
+            </div>
+            <div class="row bottom_line" style="background-color: lightgrey; border:1px solid grey;border-width: thin">
+            <div class="col-sm-2">
+              <a href="http://www.monsterindia.com/jobs-by-skill.html" class="f_linkwrap footer_heading" title="jobsBySkills">Career Courses</a>
+              <span class="colonstyle"></span>
+            </div>
+            <div class="col-sm-10 footerLink">
+              <ul class="f_linkwrapMain">
+                 <li>
+                 <a href="http://www.monsterindia.com/call-center-jobs.html" class="f_linkwrap" title="tech">Technology Courses</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mechanical-engineering-jobs.html" class="f_linkwrap" title="mgmt">Management Courses</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/nursing-jobs.html" class="f_linkwrap" title="account">Accounting Courses</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/bpo-jobs.html" class="f_linkwrap" title="market">Marketing Courses</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/networking-jobs.html" class="f_linkwrap" title="law">Law & Security Courses</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mba-jobs.html" class="f_linkwrap" title="qulty-Test">Quality Testing Courses</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/java-jobs.html" class="f_linkwrap" title="recruit">Recruitment Courses</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/seo-jobs.html" class="f_linkwrap" title="it-course">IT Courses</a>|
+                 </li>
+
+              </ul>
+            </div>
+
+            </div>
+
+              <div class="row bottom_line" style="background-color: lightgrey; border:1px solid grey;border-width: thin">
+            <div class="col-sm-2">
+              <a href="http://www.monsterindia.com/jobs-by-skill.html" class="f_linkwrap footer_heading" title="jobsBySkills">Govt. Jobs</a>
+              <span class="colonstyle"></span>
+            </div>
+            <div class="col-sm-10 footerLink">
+              <ul class="f_linkwrapMain">
+                 <li>
+                 <a href="http://www.monsterindia.com/call-center-jobs.html" class="f_linkwrap" title="teaching">Teaching Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mechanical-engineering-jobs.html" class="f_linkwrap" title="defence">Defence Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/nursing-jobs.html" class="f_linkwrap" title="bank">Bank Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/bpo-jobs.html" class="f_linkwrap" title="rail">Railway Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/networking-jobs.html" class="f_linkwrap" title="upsc">UPSC Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mba-jobs.html" class="f_linkwrap" title="ssc">SSC Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/java-jobs.html" class="f_linkwrap" title="law-jobs">LAW Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/seo-jobs.html" class="f_linkwrap" title="engg">Engineering Jobs</a>|
+                 </li>
+
+                  <li>
+                 <a href="http://www.monsterindia.com/seo-jobs.html" class="f_linkwrap" title="pg-jobs">Post Graduate Jobs</a>|
+                 </li>
+
+                   <li>
+                 <a href="http://www.monsterindia.com/seo-jobs.html" class="f_linkwrap" title="phd-jobs">Ph.D Jobs</a>|
+                 </li>
+
+              </ul>
+            </div>
+
+            </div>
+
+            <div class="row bottom_line" style="background-color: lightgrey; border:1px solid grey;border-width: thin">
+            <div class="col-sm-2">
+              <a href="http://www.monsterindia.com/jobs-by-skill.html" class="f_linkwrap footer_heading" title="jobsBySkills">All Jobs</a>
+              <span class="colonstyle"></span>
+            </div>
+            <div class="col-sm-10 footerLink">
+              <ul class="f_linkwrapMain">
+                 <li>
+                 <a href="http://www.monsterindia.com/call-center-jobs.html" class="f_linkwrap" title="WALKINS">Walkin Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mechanical-engineering-jobs.html" class="f_linkwrap" title="contract">Contract Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/nursing-jobs.html" class="f_linkwrap" title="placement">Placement Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/bpo-jobs.html" class="f_linkwrap" title="jobsforWomen">Jobs for Women</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/networking-jobs.html" class="f_linkwrap" title="startup">Startup Jobs</a>|
+                 </li>
+
+                 <li>
+                 <a href="http://www.monsterindia.com/mba-jobs.html" class="f_linkwrap" title="international">International Jobs</a>|
+                 </li>
+
+              </ul>
+            </div>
+
+            </div>
+            <div class="row">
+             <div class="col-sm-12" style="margin-top: 20px">
+             <div class="footerDiv">
+                <a href="#Terms">Terms of Use</a>
+                <a href="#report">Report a Bug/Abuse</a>
+                <a href="#addSearch">Add Job Search Box to Your Site</a>
+                <a href="#farud">Fraud/Security</a>
+                <a href="#privacy">Privacy Commitment</a>
+                <a href="#besafe">Be Safe</a>
+                <a href="#Testimonials">Testimonials</a>
+                <a href="#complaint">Complaint</a>
+                <a href="#Sitemap">Sitemap</a>
+                
+            </div>
+            </div>
+            </div>
+            </div>
+            
+        <footer class="jobportalfooter">
+          © 2017 Monster - All Rights Reserved - U.S. Patent No. 5,832,497 - NYSE: MWW
+
+            <a href="https://youtube.com" style="color: white">
+            <span class="fa-stack" style="float: right">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-youtube-play fa-stack-1x"></i>
+            </span></a>
+
+            <a href="https://plus.google.com/" style="color: white">
+            <span class="fa-stack" style="float: right">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-google-plus fa-stack-1x"></i>
+            </span></a>
+
+            <a href="https://www.twitter.com" style="color: white">
+            <span class="fa-stack" style="float: right">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x"></i>
+            </span></a>
+
+            <a href="https:www.facebook.com" style="color: white">
+            <span class="fa-stack" style="float: right">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+
+            <p style="color: white; float:right;margin-right: 30px;font-size: 13px;padding: 5px">Follow us</p>
+          </footer>
+          <div class="container-fluid" style="margin-top: 30px">
+          </div>
+              
+
+        
+        
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <!-- Start your project here-->
+
+   <!--  <div style="height: 100vh">
+       <div class="flex-center">
+           <h1 class="animated fadeIn">Material Design for Bootstrap</h1>
+       </div>
+   </div> -->
+
+    <!-- /Start your project here-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+      <!-- start your project here -->
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-login">
+    Login Here
+</button>
+
+<!-- Modal Login -->
+<div class="modal fade modal-ext" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3><i class="fa fa-user"></i> Login</h3>
+            </div>
+
+            <!--Body-->
+            <!-- // I have added formsubmit.php code to make in effective but not working -->
+            <form action="submitForm.php" method="POST" >
+            <div class="modal-body">
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input type="text" id="form2" name="email" class="form-control">
+                    <label for="form2">Your email</label>
+                </div>
+
+                <div class="md-form">
+                    <i class="fa fa-lock prefix"></i>
+                    <input type="password" id="form3" name="password" class="form-control">
+                    <label for="form3">Your password</label>
+                </div>
+                <div class="text-xs-center">
+                    <button class="btn btn-primary btn-lg">Login</button>
+                </div>
+            </div>
+            </form>
+            <!--Footer-->
+            <div class="modal-footer">
+                <div class="options">
+                <!-- Here I have created another HTML Page name with Register_Modal.html and gave the reference below -->
+                    <p>Not a member? <a href="Register_Modal.html">Sign Up</a></p>
+                    <p>Forgot <a href="#">Password?</a></p>
+                </div>
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
